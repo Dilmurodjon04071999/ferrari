@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo.svg">
+    <title>Ferrari</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body class="bg-[#1a1a1a]">
+    <header class="container1 text-white">
+      <div class="flex justify-between items-center pt-[20px]">
+        <div>
+          <img src="./img/logo.svg" alt="">
+        </div>
+    
+         <nav>
+          <ul class="hidden md:flex gap-[40px] items-center">
+            <li><a href="#" class="font-family font-semibold text-lg text-white relative inline-block hover:text-[gray] after:absolute after:bottom-0 after:right-0 after:h-[2px] after:w-0 after:bg-[gray] after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">Услуги</a></li>
+            <li><a href="#" class="font-family font-semibold text-lg text-white relative inline-block hover:text-[gray] after:absolute after:bottom-0 after:right-0 after:h-[2px] after:w-0 after:bg-[gray] after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">Преимущества</a></li>
+            <li><a href="#" class="font-family font-semibold text-lg text-white relative inline-block hover:text-[gray] after:absolute after:bottom-0 after:right-0 after:h-[2px] after:w-0 after:bg-[gray] after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">Наши работы</a></li>
+            <li><a href="#" class="font-family font-semibold text-lg text-white relative inline-block hover:text-[gray] after:absolute after:bottom-0 after:right-0 after:h-[2px] after:w-0 after:bg-[gray] after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">Контакты</a></li>
+           </ul>
+        </nav>
+
+      <div class="hidden md:flex items-center gap-7">
+        <div>
+            <a class="font-family font-semibold text-lg text-white relative inline-block hover:text-[gray] after:absolute after:bottom-0 after:right-0 after:h-[2px] after:w-0 after:bg-[gray] after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">+7 (999) 999-09-90</a>
+        </div>
+              
+        <div class="flex items-center gap-3">
+            <a href="https://www.whatsapp.com/"><img src="./img/whatsapp.png" class="w-6 h-6"></a>
+            <a href="https://www.telegram.com/"><img src="./img/telegram.png" class="w-6 h-6"></a>
+        </div>
+      </div>
+          
+          <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
+            ☰
+          </button>
+        </div>
+      </header>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-[#1c3d3c] flex flex-col items-center space-y-4 py-6 relative">
+          <a href="#" class="font-family font-semibold text-lg text-white">Услуги</a>
+          <a href="#" class="font-family font-semibold text-lg text-white">Преимущества</a>
+          <a href="#" class="font-family font-semibold text-lg text-white">Наши работы</a>
+          <a href="#" class="font-family font-semibold text-lg text-white">Контакты</a>
+
+          <div>
+            <a class="font-family font-semibold text-lg text-white">+7 (999) 999-09-90</a>
+          <div class="flex space-x-3">
+            <a href="https://www.whatsapp.com/"><img src="./img/whatsapp.png" class="w-6 h-6"></a>
+            <a href="https://www.telegram.com/"><img src="./img/telegram.png" class="w-6 h-6"></a>
+          </div>
+          </div>
+          
+          <button id="close-btn" class="text-3xl text-white absolute top-0 right-[20px]">✕</button>
+        </div>
+      
+        <section class="container1">
+          <h1 class="font-family font-extrabold md:text-[42px] uppercase text-white pt-[60px] pb-[30px] xs:text-[30px]">Превосходство в обслуживании</h1>
+          <h2 class="font-family font-semibold md:text-3xl text-white pb-[40px] xs:text-[20px]">Ваша машина в надежных руках!</h2>
+          <div class="gap-[100px] flex flex-col md:flex-row">
+            <button class="font-family font-semibold text-lg text-white md:w-80 h-[62px] rounded-[10px] xs:w-70 bg-[linear-gradient(180deg,#f00_0%,#c70000_100%)]">ОСТАВИТЬ ЗАЯВКУ</button>
+            <h1 class="font-family font-extrabold md:text-[80px] leading-[96%] tracking-[-0.04em] uppercase text-white xs:text-[40px]">F812 SUPER</h1>
+          </div>
+          
+          
+          <div class="justify-between items-center relative flex flex-col md:flex-row">
+            <div>
+              <div class="border w-[250px] h-[60px] rounded-[10px] border-solid border-[#ffb72b] relative flex items-center mt-[70px] mb-[30px]">
+              <img src="./img/flag italia.png" alt="" class="absolute top-0 left-[-30px]">
+              <h4 class="font-family font-semibold text-base text-white pl-[35px]">Специально <br> обученные механики</h4>
+              </div>
+             <div class="border w-[250px] h-[60px] rounded-[10px] border-solid border-[#ffb72b] relative flex items-center">
+               <img src="./img/toj.png" alt="" class="absolute top-0 left-[-30px]">
+               <h4 class="font-family font-semibold text-base text-white pl-[35px]">Только премиум <br>  качество</h4>
+             </div>
+            </div>
+            <div class="md:absolute top-[-70px] right-[-140px]">
+              <img src="./img/ferrari.png" alt="">
+            </div>
+          </div>
+          <div class="flex gap-[25px] items-center pt-[50px]">
+            <div>
+              <svg width="28" height="40" viewBox="0 0 28 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 40C17.713 40 21.274 38.525 23.8995 35.8995C26.525 33.274 28 29.713 28 26V14C28 10.287 26.525 6.72601 23.8995 4.1005C21.274 1.475 17.713 0 14 0C10.287 0 6.72602 1.475 4.10051 4.1005C1.475 6.72601 0 10.287 0 14V26C0 29.713 1.475 33.274 4.10051 35.8995C6.72602 38.525 10.287 40 14 40ZM2 14C2 10.8174 3.26428 7.76516 5.51472 5.51472C7.76516 3.26428 10.8174 2 14 2C17.1826 2 20.2348 3.26428 22.4853 5.51472C24.7357 7.76516 26 10.8174 26 14V26C26 29.1826 24.7357 32.2348 22.4853 34.4853C20.2348 36.7357 17.1826 38 14 38C10.8174 38 7.76516 36.7357 5.51472 34.4853C3.26428 32.2348 2 29.1826 2 26V14Z" fill="#FF0000" />
+                <path d="M13 19.5H13.09L13.29 19.71C13.383 19.8037 13.4936 19.8781 13.6155 19.9289C13.7373 19.9797 13.868 20.0058 14 20.0058C14.1321 20.0058 14.2628 19.9797 14.3846 19.9289C14.5065 19.8781 14.6171 19.8037 14.71 19.71L14.91 19.5H15V19.41L20.71 13.71L19.29 12.29L15 16.59V6H13V16.59L8.71004 12.29L7.29004 13.71L13 19.41V19.5Z" fill="#FF0000" />
+              </svg>
+            </div>
+            <h4 class="font-family font-medium text-[18px] leading-[140%] text-white">Листайте вниз</h4>
+          </div>
+        </section>
+      
+        <section class="container1">
+          <div class="mt-[100px] md:p-[30px] xs:p-[15px] border w-full md:h-[314px] xs:h-[430px] rounded-[10px] border-solid border-[#f00] bg-cover bg-center bg-no-repeat bg-[url('/img/motor.png')]">
+              <h1 class="font-family md:text-[28px] leading-[140%] font-semibold text-white xs:text-[22px]"><span class="font-medium text-[#ffb72b]">Чтобы узнать точную стоимость работ,</span> <br> запишитесь на бесплатную консультацию</h1>
+
+              <div class="gap-[20px] lg:mt-[30px] flex flex-col md:flex-row">
+                <input class="md:w-[310px] md:h-[62px] xs:w-[250px] xs:h-[50px] rounded-[10px] bg-[#fff] pl-[20px] mt-[20px]" type="text" placeholder="Ваше имя">
+              <div class="md:w-[310px] md:h-[62px] xs:w-[250px] xs:h-[50px] rounded-[10px] bg-[#fff] lg:mt-[20px] flex gap-[20px]">
+                <div class="flex items-center gap-2 p-[20px]">
+                  <img src="./img/flag russian.png" alt="">
+                  <div>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.7556 4.82761C19.4298 4.5018 18.9031 4.5018 18.5773 4.82761L9.99997 13.4049L1.42265 4.82761C1.09684 4.5018 0.570173 4.5018 0.24436 4.82761C-0.0814533 5.15343 -0.0814533 5.68009 0.24436 6.00591L9.41084 15.1724C9.57334 15.3349 9.78666 15.4166 10 15.4166C10.2134 15.4166 10.4267 15.3349 10.5892 15.1724L19.7557 6.00591C20.0814 5.68009 20.0814 5.15343 19.7556 4.82761Z" fill="#FF0000" />
+                    </svg>
+                  </div>
+                  <input type="number" placeholder="+7 (999) 999-99-99">
+                </div>
+              </div>
+              <div>
+                  <button class="md:w-[310px] md:h-[62px] xs:w-[250px] xs:h-[50px] rounded-[10px] bg-[linear-gradient(180deg,_#f00_0%,_#c70000_100%)] font-family font-semibold text-lg text-white lg:mt-[20px]">ЗАПИСАТЬСЯ</button>
+              </div>
+              </div>
+              <p class="font-family font-medium text-base leading-[140%] text-white pt-[20px]">Оставляя заявку, вы даете согласие на обработку персональных данных</p>
+          </div>
+          
+        </section>
+
+        <section class="container1">
+          <h1 class="font-family font-extrabold md:text-[42px] uppercase text-white xs:text-[35px]">Наши услуги</h1>
+          <h4 class="font-family font-semibold md:text-2xl text-white xs:text-[20px]">Снизу мы предоставили список наших услуг по разделам:</h4>
+
+          <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-[0px]">
+            <div>
+              <img src="./img/img1.png" alt="">
+              <h3 class="font-family font-semibold md:text-2xl leading-[140%] text-white xs:text-[20px]">ТЕХ.ОБСЛУЖИВАНИЕ</h3>
+            </div>
+            <div>
+              <img src="./img/img2.png" alt="">
+              <h3 class="font-family font-semibold md:text-2xl leading-[140%] text-white xs:text-[20px]">ДИАГНОСТИКА</h3>
+            </div>
+            <div>
+              <img src="./img/img3.png" alt="">
+              <h3 class="font-family font-semibold md:text-2xl leading-[140%] text-white xs:text-[20px]">ХОДОВАЯ ЧАСТЬ</h3>
+            </div>
+            <div>
+              <img src="./img/img4.png" alt="">
+              <h3 class="font-family font-semibold md:text-2xl leading-[140%] text-white xs:text-[20px]">ТРАНСМИССИЯ</h3>
+            </div>
+            <div>
+              <img src="./img/img5.png" alt="">
+              <h3 class="font-family font-semibold md:text-2xl leading-[140%] text-white xs:text-[20px]">ДВИГАТЕЛЬ</h3>
+            </div>
+            <div>
+              <img src="./img/img6.png" alt="">
+              <h3 class="font-family font-semibold md:text-2xl leading-[140%] text-white xs:text-[20px]">ВЫХЛОПНАЯ СИСТЕМА</h3>
+            </div>
+            <div>
+              <img src="./img/img7.png" alt="">
+              <h3 class="font-family font-semibold md:text-2xl leading-[140%] text-white xs:text-[20px]">РУЛЕВОЕ УПРАВЛЕНИЕ</h3>
+            </div>
+            <div>
+              <img src="./img/img8.png" alt="">
+              <h3 class="font-family font-semibold md:text-2xl leading-[140%] text-white xs:text-[20px]">ТОПЛИВНАЯ СИСТЕМА</h3>
+            </div>
+          </div>
+        </section>
+
+        <section class="container1">
+          <h1 class="font-family font-extrabold md:text-[42px] uppercase text-white xs:text-[35px] mt-[60px] mb-[50px]">Почему стоит выбрать нас</h1>
+
+          <div class="grid lg:grid-cols-3 md:grid-cols-2 xs:grid-cols-1">
+            <div>
+              <img src="./img/po1.png" alt="" class="w-[80px] h-[80px]"><br>
+              <h2 class="font-family font-semibold md:text-[28px] leading-[140%] text-white xs:text-[22px] pb-[10px]">Заголовок преимущества</h2>
+              <h3 class="font-family font-medium md:text-[21px] leading-[140%] text-white xs:text-[17px]">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna</h3>
+            </div>
+            <div>
+              <img src="./img/po2.png" alt="" class="w-[80px] h-[80px]"><br>
+              <h2 class="font-family font-semibold md:text-[28px] leading-[140%] text-white xs:text-[22px] pb-[10px]">Заголовок преимущества</h2>
+              <h3 class="font-family font-medium md:text-[21px] leading-[140%] text-white xs:text-[17px]">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna</h3>
+            </div>
+            <div>
+              <img src="./img/po3.png" alt="" class="w-[80px] h-[80px]"><br>
+              <h2 class="font-family font-semibold md:text-[28px] leading-[140%] text-white xs:text-[22px] pb-[10px]">Заголовок преимущества</h2>
+              <h3 class="font-family font-medium md:text-[21px] leading-[140%] text-white xs:text-[17px]">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna</h3>
+            </div>
+          </div>
+        </section>
+
+        <section class="container1">
+          <h1 class="font-family font-extrabold md:text-[42px] uppercase text-white xs:text-[35px] mt-[60px] mb-[40px]">Наши работы</h1>
+    
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                 
+                  <div class="swiper-slide">
+                    <div class="bg-no-repeat bg-center bg-cover bg-[url('/img/img9.png')] w-full h-64 object-cover rounded-lg relative">
+                      <h2 class="absolute bottom-0 left-0 font-semibold text-xl leading-[140%] text-[#f00] w-full h-[60px] bg-black/80 backdrop:blur-lg pl-[50px] pt-[15px]">Название работы</h2>
+                    </div>
+                    
+                    <p class="font-family font-medium md:text-[18px] leading-[140%] text-white xs:text-[16px] pt-[20px]">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna <br> Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="bg-no-repeat bg-center bg-cover bg-[url('/img/img9.png')] w-full h-64 object-cover rounded-lg relative">
+                      <h2 class="absolute bottom-0 left-0 font-semibold text-xl leading-[140%] text-[#f00] w-full h-[60px] bg-black/80 backdrop:blur-lg pl-[50px] pt-[15px]">Название работы</h2>
+                    </div>
+                    
+                    <p class="font-family font-medium md:text-[18px] leading-[140%] text-white xs:text-[16px] pt-[20px]">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna <br> Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="bg-no-repeat bg-center bg-cover bg-[url('/img/img9.png')] w-full h-64 object-cover rounded-lg relative">
+                      <h2 class="absolute bottom-0 left-0 font-semibold text-xl leading-[140%] text-[#f00] w-full h-[60px] bg-black/80 backdrop:blur-lg pl-[50px] pt-[15px]">Название работы</h2>
+                    </div>
+                    
+                    <p class="font-family font-medium md:text-[18px] leading-[140%] text-white xs:text-[16px] pt-[20px]">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna <br> Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="bg-no-repeat bg-center bg-cover bg-[url('/img/img9.png')] w-full h-64 object-cover rounded-lg relative">
+                      <h2 class="absolute bottom-0 left-0 font-semibold text-xl leading-[140%] text-[#f00] w-full h-[60px] bg-black/80 backdrop:blur-lg pl-[50px] pt-[15px]">Название работы</h2>
+                    </div>
+                    
+                    <p class="font-family font-medium md:text-[18px] leading-[140%] text-white xs:text-[16px] pt-[20px]">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna <br> Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="bg-no-repeat bg-center bg-cover bg-[url('/img/img9.png')] w-full h-64 object-cover rounded-lg relative">
+                      <h2 class="absolute bottom-0 left-0 font-semibold text-xl leading-[140%] text-[#f00] w-full h-[60px] bg-black/80 backdrop:blur-lg pl-[50px] pt-[15px]">Название работы</h2>
+                    </div>
+                    
+                    <p class="font-family font-medium md:text-[18px] leading-[140%] text-white xs:text-[16px] pt-[20px]">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna <br> Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="bg-no-repeat bg-center bg-cover bg-[url('/img/img9.png')] w-full h-64 object-cover rounded-lg relative">
+                      <h2 class="absolute bottom-0 left-0 font-semibold text-xl leading-[140%] text-[#f00] w-full h-[60px] bg-black/80 backdrop:blur-lg pl-[50px] pt-[15px]">Название работы</h2>
+                    </div>
+                    
+                    <p class="font-family font-medium md:text-[18px] leading-[140%] text-white xs:text-[16px] pt-[20px]">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna <br> Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna</p>
+                  </div>
+                </div>
+            
+                
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
+
+        <section class="container1">
+          <h1 class="font-family font-extrabold md:text-[42px] uppercase text-white xs:text-[35px] mt-[60px] mb-[40px]">Список моделей</h1>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                 
+                  <div class="swiper-slide">
+                    <div class="border w-[285px] h-[109px] rounded-[20px] border-solid border-[#f00] flex items-center gap-[7px] p-[12px]">
+                      <img src="./img/avto1.png" alt="">
+                      <div>
+                        <h2 class="font-family font-semibold text-xl leading-[140%] text-[#f00]">GTC4LUSSO</h2>
+                        <h4 class="font-family font-semibold text-[16px] leading-[140%] text-white">2016-2020</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="border w-[295px] h-[109px] rounded-[20px] border-solid border-[#f00] flex items-center gap-[3px] p-[5px]">
+                      <img src="./img/avto2.png" alt="">
+                      <div>
+                        <h2 class="font-family font-semibold text-xl leading-[140%] text-[#f00]">PUROSANGUE</h2>
+                        <h4 class="font-family font-semibold text-[16px] leading-[140%] text-white">2022</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="border w-[285px] h-[109px] rounded-[20px] border-solid border-[#f00] flex items-center gap-[7px] p-[12px]">
+                      <img src="./img/avto3.png" alt="">
+                      <div>
+                        <h2 class="font-family font-semibold text-xl leading-[140%] text-[#f00]">F8</h2>
+                        <h4 class="font-family font-semibold text-[16px] leading-[140%] text-white">2019</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="border w-[285px] h-[109px] rounded-[20px] border-solid border-[#f00] flex items-center gap-[7px] p-[12px]">
+                      <img src="./img/avto4.png" alt="">
+                      <div>
+                        <h2 class="font-family font-semibold text-xl leading-[140%] text-[#f00]">812</h2>
+                        <h4 class="font-family font-semibold text-[16px] leading-[140%] text-white">2017</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="border w-[285px] h-[109px] rounded-[20px] border-solid border-[#f00] flex items-center gap-[7px] p-[12px]">
+                      <img src="./img/avto3.png" alt="">
+                      <div>
+                        <h2 class="font-family font-semibold text-xl leading-[140%] text-[#f00]">GTC4LUSSO</h2>
+                        <h4 class="font-family font-semibold text-[16px] leading-[140%] text-white">2016-2020</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
+
+        <section class="container1">
+          <div class="justify-between mt-[70px] flex flex-col md:flex-row">
+            <div>
+              <h1 class="font-family font-extrabold md:text-[42px] uppercase text-white pb-[50px] xs:text-[35px]">Контакты</h1>
+              <div class="flex gap-[15px] items-center pb-[25px]">
+                <div>
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_0_173)">
+                      <path d="M19.4311 0.0101807C11.484 0.289027 4.88189 6.48926 4.11916 14.4036C3.96334 15.9864 4.05355 17.5201 4.3324 18.9881C4.3324 18.9881 4.357 19.1604 4.43902 19.4884C4.68506 20.5874 5.05412 21.6536 5.51339 22.6541C7.11266 26.4432 10.8115 32.7828 19.1112 39.6802C19.6197 40.1066 20.3661 40.1066 20.8827 39.6802C29.1825 32.791 32.8813 26.4514 34.4888 22.6459C34.9563 21.6454 35.3171 20.5874 35.5632 19.4802C35.637 19.1604 35.6698 18.9799 35.6698 18.9799C35.8584 17.9958 35.9568 16.987 35.9568 15.9536C35.9568 6.94853 28.5018 -0.309672 19.4311 0.0101807ZM19.997 23.8925C15.7159 23.8925 12.2467 20.4234 12.2467 16.1423C12.2467 11.8611 15.7159 8.39197 19.997 8.39197C24.2781 8.39197 27.7473 11.8611 27.7473 16.1423C27.7473 20.4234 24.2781 23.8925 19.997 23.8925Z" fill="#FF0000" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_0_173">
+                        <rect width="40" height="40" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div>
+                  <h2 class="font-family font-bold text-[21px] text-white">Наш адрес:</h2>
+                  <h2 class="font-family font-medium text-[21px] text-white">Россия, г. Москва, улица Пушкина, дом 1, корпус 2</h2>
+                </div>
+              </div>
+              <div class="flex gap-[15px] items-center pb-[25px]">
+                <div>
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M38.9113 29.356L33.3292 23.7738C31.3356 21.7802 27.9464 22.5778 27.149 25.1694C26.5509 26.9637 24.5573 27.9605 22.763 27.5617C18.7758 26.5649 13.393 21.3815 12.3962 17.1949C11.7981 15.4006 12.9943 13.407 14.7886 12.809C17.3803 12.0115 18.1777 8.62238 16.1841 6.62877L10.602 1.04665C9.00709 -0.348882 6.61475 -0.348882 5.21922 1.04665L1.43136 4.83451C-2.35651 8.82174 1.83008 19.3879 11.2001 28.7579C20.5701 38.1279 31.1362 42.5139 35.1234 38.5266L38.9113 34.7387C40.3069 33.1438 40.3069 30.7515 38.9113 29.356Z" fill="#FF0000" />
+                  </svg>
+                </div>
+                <div>
+                  <h2 class="font-family font-bold text-[21px] text-white">Наш адрес:</h2>
+                  <h2 class="font-family font-medium text-[21px] text-white">Россия, г. Москва, улица Пушкина, дом 1, корпус 2</h2>
+                </div>
+              </div>
+              <div class="flex gap-[15px] items-center">
+                <div>
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_0_184)">
+                      <path d="M20.0781 16.4062C18.1395 16.4062 16.5625 17.9833 16.5625 19.9219C16.5625 21.8605 18.1395 23.4375 20.0781 23.4375C22.0167 23.4375 23.5938 21.8605 23.5938 19.9219C23.5938 17.9833 22.0167 16.4062 20.0781 16.4062Z" fill="#FF0000" />
+                      <path d="M19.9219 0C8.93672 0 0 8.93672 0 19.9219C0 30.907 8.93672 40 19.9219 40C30.907 40 40 30.907 40 19.9219C40 8.93672 30.907 0 19.9219 0ZM28.2812 25.7812C26.6974 25.7812 25.3006 24.9874 24.4518 23.7816C23.3773 24.9977 21.8245 25.7812 20.0781 25.7812C16.8474 25.7812 14.2188 23.1526 14.2188 19.9219C14.2188 16.6912 16.8474 14.0625 20.0781 14.0625C21.4022 14.0625 22.6114 14.5207 23.5938 15.2643V15.2344C23.5938 14.5866 24.1179 14.0625 24.7656 14.0625C25.4134 14.0625 25.9375 14.5866 25.9375 15.2344C25.9375 17.8406 25.9375 18.4863 25.9375 21.0938C25.9375 22.3858 26.9892 23.4375 28.2812 23.4375C29.5733 23.4375 30.625 22.3858 30.625 21.0938C30.625 13.2507 25.435 9.375 20.0781 9.375C14.2623 9.375 9.53125 14.106 9.53125 19.9219C9.53125 25.7377 14.2623 30.4688 20.0781 30.4688C22.4219 30.4688 24.6386 29.718 26.4891 28.2966C27.7252 27.353 29.1407 29.2158 27.9173 30.1552C25.6526 31.8935 22.9426 32.8125 20.0781 32.8125C12.9702 32.8125 7.1875 27.0298 7.1875 19.9219C7.1875 12.814 12.9702 7.03125 20.0781 7.03125C26.5545 7.03125 32.9688 11.8074 32.9688 21.0938C32.9688 23.679 30.8665 25.7812 28.2812 25.7812Z" fill="#FF0000" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_0_184">
+                        <rect width="40" height="40" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div>
+                  <h2 class="font-family font-bold text-[21px] text-white">Наш адрес:</h2>
+                  <h2 class="font-family font-medium text-[21px] text-white">Россия, г. Москва, улица Пушкина, дом 1, корпус 2</h2>
+                </div>
+              </div>
+              <h2 class="font-family font-extrabold text-2xl uppercase text-white py-[40px]">Мы в социальных сетях</h2>
+              <div class="flex gap-[15px]">
+                <a href="https://www.whatsapp.com/"><img src="./img/whatsapp.png" alt=""></a>
+                <a href="https://www.telegram.com/"><img src="./img/telegram.png" alt=""></a>
+              </div>
+            </div>
+            <div class="md:w-[590px] md:h-[504px] xs:w-[280px] xs:h-[560px] rounded-[20px] border-2 border-solid border-[#f00] bg-[#1a1a1a] text-center">
+              <h2 class="font-family font-extrabold text-center md:text-[42px] text-white md:pt-[7px] xs:pt-[20px] xs:text-[35px]">Оставьте заявку</h2>
+              <h4 class="font-family font-semibold md:text-[21px] text-center text-white xs:text-[18px]">Заполните форму и мы Вам перезвоним!</h4>
+              <input class="md:w-[410px] md:h-[62px] xs:w-[250px] xs:h-[50px] rounded-[10px] bg-[#fff] pl-[20px] mt-[20px]" type="text" placeholder="Ваше имя">
+              <select name="услугу" class="md:w-[410px] md:h-[62px] xs:w-[250px] xs:h-[50px] rounded-[10px] bg-[#fff] pl-[20px] mt-[20px]">
+                <option value="Выберите интересующую услугу">Выберите интересующую услугу</option>
+                <option value="Выберите интересующую услугу">Выберите интересующую услугу</option>
+              </select>
+              <div class="md:w-[410px] md:h-[62px] xs:w-[250px] xs:h-[50px] rounded-[10px] bg-[#fff] md:ml-[90px] xs:ml-[15px] mt-[20px]">
+                <div class="flex items-center gap-2 p-[20px]">
+                  <img src="./img/flag russian.png" alt="">
+                  <div>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.7556 4.82761C19.4298 4.5018 18.9031 4.5018 18.5773 4.82761L9.99997 13.4049L1.42265 4.82761C1.09684 4.5018 0.570173 4.5018 0.24436 4.82761C-0.0814533 5.15343 -0.0814533 5.68009 0.24436 6.00591L9.41084 15.1724C9.57334 15.3349 9.78666 15.4166 10 15.4166C10.2134 15.4166 10.4267 15.3349 10.5892 15.1724L19.7557 6.00591C20.0814 5.68009 20.0814 5.15343 19.7556 4.82761Z" fill="#FF0000" />
+                    </svg>
+                  </div>
+                  <input type="number" placeholder="+7 (999) 999-99-99">
+                </div>
+                <button class="md:w-[410px] md:h-[62px] xs:w-[250px] xs:h-[50px] rounded-[10px] bg-[linear-gradient(180deg,_#f00_0%,_#c70000_100%)] font-family font-semibold text-lg text-center text-white mt-[15px]">ОТПРАВИТЬ</button>
+                <p class="font-family font-medium text-[21px] leading-[140%] text-center text-white mt-2">Оставляя заявку, вы даете согласие на <br> обработку персональных данных</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-[80px]">
+          <iframe class="w-full h-[600px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d548781.7322962456!2d36.72590183429358!3d55.5799532334033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2sMoskva%2C%20Rossiya!5e1!3m2!1suz!2s!4v1759564698155!5m2!1suz!2s" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <footer class="container1">
+          <div class="justify-between flex flex-col md:flex-row mt-[50px] py-[15px]">
+            <div><img src="./img/logo2.svg" alt=""></div>
+            <div>
+              <ul class="gap-[20px] flex flex-col md:flex-row">
+                <li><a class="font-family font-semibold text-lg text-white relative inline-block hover:text-[gray] after:absolute after:bottom-0 after:right-0 after:h-[2px] after:w-0 after:bg-[gray] after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full" href="#">Услуги</a></li>
+                <li><a class="font-family font-semibold text-lg text-white relative inline-block hover:text-[gray] after:absolute after:bottom-0 after:right-0 after:h-[2px] after:w-0 after:bg-[gray] after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full" href="#">Преимущества</a></li>
+                <li><a class="font-family font-semibold text-lg text-white relative inline-block hover:text-[gray] after:absolute after:bottom-0 after:right-0 after:h-[2px] after:w-0 after:bg-[gray] after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full" href="#">Наши работы</a></li>
+                <li><a class="font-family font-semibold text-lg text-white relative inline-block hover:text-[gray] after:absolute after:bottom-0 after:right-0 after:h-[2px] after:w-0 after:bg-[gray] after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full" href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="flex gap-3 items-center">
+              <img src="./img/ft.png" alt="">
+              <h3 class="font-family font-semibold text-lg leading-[140%] text-center text-white">Наверх</h3>
+            </div>
+          </div>
+          <div class="justify-between flex flex-col sm:flex-row mt-[30px]">
+            <div>
+              <p class="font-family font-medium text-base leading-[140%] text-white">© 2023 Company name</p>
+              <p class="font-family font-medium text-base leading-[140%] text-white">Все права защищены</p>
+            </div>
+            <div>
+              <p class="font-family font-medium text-base leading-[140%] text-white">Политика конфиденциальности</p>
+            </div>
+          </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,     
+      spaceBetween: 20,     
+      loop: true,           
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+
+      <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const closeBtn = document.getElementById("close-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+      
+        menuBtn.addEventListener("click", () => {
+          mobileMenu.classList.remove("hidden");
+          menuBtn.classList.add("hidden");
+        });
+      
+        closeBtn.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          menuBtn.classList.remove("hidden");
+        });
+      </script>
+</body>
+</html>
